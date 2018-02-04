@@ -12,14 +12,14 @@ Full working example creating subscriptions for users in PayPal using latest RES
 ## Setup Instructions
 
 **STEP 1: Install Composer and PayPal SDK into your project folder**  
-[Install Composer](https://getcomposer.org/doc/00-intro.md) - `composer require "paypal/rest-api-sdk-php:*"`  
-[Install PayPal SDK](https://developer.paypal.com/docs/api/quickstart/install/)
+[Install Composer](https://getcomposer.org/doc/00-intro.md)  
+[Install PayPal SDK](https://developer.paypal.com/docs/api/quickstart/install/) - `composer require "paypal/rest-api-sdk-php:*"`
 
 **STEP 2: Create new app in PayPal Developer**  
 Log in to PayPal Developer site and under [My Apps and Credentials](https://developer.paypal.com/developer/applications/) create an app under REST API apps. Get client ID and secret key for both sandbox and live accounts and add these to includes/bootstrap.php file
 
 **STEP 3: Create Billing Plans**  
-Fill in Subscription information in CreatePlan.php, run UpdatePlan.php in browser and save Plan ID. Note: UpdatePlan.php must be run within project folder to set correct $baseURL.  
+Fill in Subscription information in CreatePlan.php, run UpdatePlan.php in browser and save Plan ID. *Note*: UpdatePlan.php must be run within project folder to set correct $baseURL.  
 This step can be repeated to create multiple Billing Plans with different subscription information e.g. varying price plans.
 
 **STEP 4: Create Billing Agreement names &amp; descriptions**  
